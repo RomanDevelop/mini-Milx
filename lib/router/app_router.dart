@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import '../features/splash/presentation/splash_screen.dart';
 import '../features/dashboard/presentation/dashboard_screen.dart';
 import '../features/auth/presentation/login_screen.dart';
 import '../features/advance_funds/presentation/advance_funds_screen.dart';
@@ -6,8 +7,12 @@ import '../features/withdrawal/presentation/withdrawal_screen.dart';
 import '../features/p2p_transfer/presentation/p2p_transfer_screen.dart';
 
 final router = GoRouter(
-  initialLocation: '/',
+  initialLocation: '/splash',
   routes: [
+    GoRoute(
+      path: '/splash',
+      builder: (_, __) => const SplashScreen(),
+    ),
     GoRoute(
       path: '/',
       builder: (_, __) => const DashboardScreen(),

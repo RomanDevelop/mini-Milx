@@ -10,6 +10,7 @@ class MiniMilxApp extends StatelessWidget {
     return MaterialApp.router(
       title: 'MiniMilx',
       theme: AppTheme.lightTheme,
+      debugShowCheckedModeBanner: false,
       darkTheme: AppTheme.darkTheme,
       routerConfig: router,
     );

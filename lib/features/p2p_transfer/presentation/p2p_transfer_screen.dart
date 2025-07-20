@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
+import '../../../core/widgets/app_bar_widget.dart';
 
 class P2PTransferScreen extends StatefulWidget {
   const P2PTransferScreen({super.key});
@@ -48,9 +49,10 @@ class _P2PTransferScreenState extends State<P2PTransferScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('P2P Transfer'),
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+      appBar: MiniMilxAppBar(
+        title: 'P2P Transfer',
+        showLogo: false,
+        onBackPressed: () => context.go('/'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
