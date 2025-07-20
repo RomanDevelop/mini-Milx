@@ -251,3 +251,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **MiniMilx** - Empowering YouTube creators with financial tools! 🎬💰
+
+
+https://github.com/user-attachments/assets/0d40f66d-5283-402e-b773-43af1a7c3305
+
